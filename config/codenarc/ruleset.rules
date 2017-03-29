@@ -1,0 +1,176 @@
+ruleset {
+
+  description 'Pauls custom ruleset for malaprogramm'
+
+// -- Basic Rules ------
+
+  AssertWithinFinallyBlock
+  AssignmentInConditional
+  BitwiseOperatorInConditional
+  BrokenNullCheck
+  BrokenOddnessCheck
+  ComparisonOfTwoConstants
+  ComparisonWithSelf
+  ConstantAssertExpression
+  ConstantIfExpression
+  ConstantTernaryExpression
+  DeadCode
+  DoubleNegative
+  DuplicateMapKey
+  DuplicateSetValue
+  EmptyCatchBlock
+  EmptyClass
+  EmptyElseBlock
+  EmptyFinallyBlock
+  EmptyForStatement
+  EmptyIfStatement
+  EmptyInstanceInitializer
+  EmptyMethod
+  EmptyStaticInitializer
+  EmptySwitchStatement
+  EmptyTryBlock
+  EmptyWhileStatement
+
+  HardCodedWindowsFileSeparator
+  HardCodedWindowsRootDirectory
+
+  MultipleUnaryOperators
+  RemoveAllOnSelf
+  ReturnFromFinallyBlock
+  ThrowExceptionFromFinallyBlock
+
+// -- Naming Rules ------
+
+  ClassName
+  ClassNameSameAsFilename
+  ConfusingMethodName
+
+
+// -- Formatting Rules ------
+
+  LineLength {length = 150}
+
+  ConsecutiveBlankLines
+  BlankLineBeforePackage
+  FileEndsWithoutNewline
+  MissingBlankLineAfterImports
+  MissingBlankLineAfterPackage
+  TrailingWhitespace
+
+  SpaceAfterFor
+  SpaceAfterIf
+  SpaceAfterWhile
+  SpaceAfterSwitch
+  SpaceAfterCatch
+
+  SpaceAroundClosureArrow
+  SpaceAroundOperator
+  SpaceAroundMapEntryColon
+
+  SpaceAfterComma
+  SpaceAfterSemicolon
+
+  SpaceBeforeOpeningBrace
+  SpaceAfterOpeningBrace
+  SpaceBeforeClosingBrace
+  SpaceAfterClosingBrace
+
+  // check that all statements have {}
+  IfStatementBraces
+  ElseBlockBraces
+  ForStatementBraces
+  WhileStatementBraces
+
+  // checks location of opening { (should be on same line)
+  BracesForClass
+  BracesForMethod
+  BracesForForLoop
+  BracesForIfElse
+  BracesForTryCatchFinally
+
+  // check each Class/Interface for JavaDoc
+  //ClassJavadoc
+
+  ClosureStatementOnOpeningLineOfMultipleLineClosure
+
+
+// -- Convention Rules ------
+  ConfusingTernary
+  InvertedIfElse
+  CouldBeElvis
+  TernaryCouldBeElvis
+  IfStatementCouldBeTernary
+  ParameterReassignment
+  TrailingComma
+
+// -- Import Rules ------
+  DuplicateImport
+  ImportFromSamePackage
+  MisorderedStaticImports
+  UnnecessaryGroovyImport
+  UnusedImport
+  NoWildcardImports
+
+// -- Unused Rules -- checks for unused stuff
+  UnusedArray
+  UnusedMethodParameter
+  UnusedObject
+  UnusedVariable
+  UnusedPrivateField
+  UnusedPrivateMethod
+  UnusedPrivateMethodParameter
+
+// -- Groovy-ism Rules
+  AssignCollectionSort
+  AssignCollectionUnique
+  ClosureAsLastMethodParameter
+  CollectAllIsDeprecated
+  ConfusingMultipleReturns
+  ExplicitArrayListInstantiation
+  ExplicitCallToAndMethod
+  ExplicitCallToCompareToMethod
+  ExplicitCallToDivMethod
+  ExplicitCallToEqualsMethod
+  ExplicitCallToGetAtMethod
+  ExplicitCallToLeftShiftMethod
+  ExplicitCallToMinusMethod
+  ExplicitCallToMultiplyMethod
+  ExplicitCallToModMethod
+  ExplicitCallToPlusMethod
+  ExplicitCallToPowerMethod
+  ExplicitCallToRightShiftMethod
+  ExplicitCallToXorMethod
+
+  GetterMethodCouldBeProperty
+  GStringAsMapKey
+  GStringExpressionWithinString
+  UseCollectMany
+  UseCollectNested
+
+// -- Unnecessary Rules
+  AddEmptyString
+  ConsecutiveLiteralAppends
+  ConsecutiveStringConcatenation
+  UnnecessaryBooleanExpression
+  UnnecessaryCallForLastElement
+  UnnecessaryCast
+  UnnecessaryCollectCall
+  UnnecessaryConstructor
+  UnnecessaryDefInFieldDeclaration
+  UnnecessaryDefInMethodDeclaration
+  UnnecessaryDefInVariableDeclaration
+  UnnecessaryGetter
+  UnnecessaryGString
+  UnnecessaryIfStatement
+  UnnecessaryObjectReferences
+  UnnecessaryNullCheck
+  UnnecessaryParenthesesForMethodCallWithClosure
+  UnnecessaryPublicModifier
+  //UnnecessaryReturnKeyword
+  UnnecessarySafeNavigationOperator
+  UnnecessarySelfAssignment
+  UnnecessarySemicolon
+  UnnecessarySubstring
+  UnnecessaryTernaryExpression
+  UnnecessaryToString
+}
